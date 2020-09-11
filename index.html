@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: burlywood;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        form{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            height:45vh;
+            width: 43vh;
+            align-items: center;
+            justify-content: center;
+            -webkit-box-shadow: 0px 10px 39px 10px  rgb(170, 141, 105);
+            -moz-box-shadow: 0px 10px 39px 10px  rgb(170, 141, 105);
+            box-shadow: 0px 10px 39px 10px rgb(170, 141, 105);
+            transform: translate(0%, 0%);
+            transition: all 0.5s ease;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 15px;
+            color:burlywood;
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding:0 10px;
+        }
+
+        label{
+            padding: 5px 0;
+            color: rgb(167, 79, 108);
+        }
+
+        input{
+            height: 100%;
+            outline: none;
+            width: 100%;
+            background-color: rgb(255, 243, 227);
+            border: none;
+            padding: 7px;
+            margin-top: 15px;
+            font-family: inherit;
+            margin-top: 15px;
+            border-radius: 2px;
+        }
+
+        button{
+            border: none;
+            background-color: burlywood;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 2px;
+            color:white;
+            font-weight: bold;
+            width: 90%;
+        }
+        a{
+            margin-top: 20px;
+            font-size: 10px;
+            color: burlywood;
+        }
+
+
+@keyframes shake{
+    0%{
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+    50%{
+        transform: translate(0%, 0%) rotate(10deg);
+    }
+    100%{
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <form action="\" id='form'>
+        <h1>Login</h1>
+        <div>
+            <input type="text" name='name' id='name' placeholder = 'Username'>
+        </div>
+        <div>
+            <input type="password" name='password' id='password' placeholder="Password">
+        </div>
+        <button type="submit">Sign in</button>
+        <a href="">Lost Your Password?</a>
+    </form>
+
+    <script src='app.js'></script>
+</body>
+</html>
